@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PrikazFilmova">
+   <children>
+      <AnchorPane prefHeight="496.0" prefWidth="947.0">
+         <children>
+             <TableView fx:id="table" editable="true" layoutX="5.0" layoutY="32.0" prefHeight="456.0" prefWidth="937.0">
+              <columns>
+                <TableColumn fx:id="id" prefWidth="33.0" text="ID" />
+                <TableColumn fx:id="naziv" prefWidth="126.0" text="Naziv" />
+                  <TableColumn fx:id="zanr" prefWidth="28.0" text="Žanr" />
+                  <TableColumn fx:id="godina" prefWidth="65.99996948242188" text="Godina" />
+                  <TableColumn fx:id="trajanje" prefWidth="39.0" text="Trajanje" />
+                  <TableColumn fx:id="opis" prefWidth="87.0" text="Opis" />
+                  <TableColumn fx:id="ocena" prefWidth="67.0" text="Ocena" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <Label layoutX="426.0" layoutY="4.0" text="Baza filmova">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
